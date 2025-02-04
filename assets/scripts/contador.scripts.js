@@ -1,5 +1,19 @@
-function adicionar(){
-    let number = number (document.getElementById('number'))
-    alert(number)
-    document.getElementById("number")innerText = number + 1;
+
+let contador = 0;
+
+function reset(){
+     contador =  0
+    document.getElementById("number").innerHTML = contador
 }
+
+
+function subtrair (){
+    contador --
+    document.getElementById("number").innerHTML = contador
+}
+
+function adicionar (){
+    contador ++
+    document.getElementById("number").innerHTML = contador
+}
+

@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/contador.css">
     <title>contador JS</title>
 </head>
 <body>
-    <button>
-        <a href="../index.html">ir para home page</a></button>
-        <p id="number">0</p>
-
-    <div>
-       <button id="btn" onclick="reset()">Resetar</button>
-       <button id="btn" onclick="subtrair()">Subtração</button>
-       <button id="btn" onclick="adicionar()">Adicionar</button>
+    
+    <div class="contador">
+        <button> <a href="../index.html">ir para home page</a></button>
+        
+        <div class="button">
+            <button id="btn" onclick="subtrair()">-</button>
+            <p id="number">0</p>
+            <button id="btn" onclick="adicionar()">+</button> 
+        </div>     
+        <button id="btn" onclick="reset()">Resetar</button>
     </div>
     
     <p id="result"></p>
